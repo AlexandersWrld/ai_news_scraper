@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "ai-news-scraper"
+version = "0.2.0"
+description = "A scraper for AI news from The Verge and VentureBeat with JSON export"
+authors = ["Your Name <your.email@example.com>"]
+readme = "README.md"
+packages = [{include = "ai_news_scraper"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+feedparser = "^6.0.10"
+requests = "^2.31.0"
+
+[tool.poetry.scripts]
+ai-news = "ai_news_scraper.cli:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
