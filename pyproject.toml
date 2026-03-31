@@ -7,9 +7,11 @@ readme = "README.md"
 packages = [{include = "ai_news_scraper"}]
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = "^3.10"
 feedparser = "^6.0.10"
 requests = "^2.31.0"
+mcp = {extras = ["cli"], version = "^1.26.0"}
+fastmcp = "^3.2.0"
 
 [tool.poetry.scripts]
 ai-news = "ai_news_scraper.cli:main"
